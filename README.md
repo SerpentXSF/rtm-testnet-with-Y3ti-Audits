@@ -1,4 +1,4 @@
-# Y3ti Audits — Raptoreum SmartNode Package (`2.0.4.01-Y3ti-Serpent-r1`, testnet)
+# Y3ti Audits — Raptoreum SmartNode Package (testnet)
 
 This bundle lets you run a **Y3ti Audits validator node** on the Raptoreum testnet. It pairs
 the **official Raptoreum Core testnet wallet binaries** with the **Y3ti Audits node tooling**
