@@ -7,6 +7,12 @@ Raptoreum node and everything needed to earn testnet rewards by validating secur
 
 ---
 
+> **Current release:** Raptoreum Core package `2.0.4.01-Y3ti-Serpent-r10` + Y3ti Audits
+> node agent **2.1.25** (`CODE_FP 0987cf4b57c95514`, sandbox `ce02b1e796caebca`).
+> The authoritative list of versions and digests is the **Releases** page and the
+> `README.md` inside the node package -- deliberately not duplicated further down this file,
+> because a second copy is a copy that drifts.
+
 ## What is Y3ti Audits?
 
 Y3ti Audits is a **decentralized, consensus-verified code-security network**. Developers submit
@@ -29,7 +35,8 @@ mainnet. Never use real funds.)
 
 ## About the version label
 
-The `2.0.4.01-Y3ti-Serpent-r1` name labels **this distribution package** — it is **not** a Raptoreum
+The `2.0.4.01-Y3ti-Serpent-rN` name (the current release is **r10**) labels
+**this distribution package** — it is **not** a Raptoreum
 daemon version. The wallet binaries here are the **stock, unmodified official Raptoreum Core
 `2.0.4.01` testnet release** (verbatim, bit-identical to upstream), which is the **latest upstream
 testnet release**. No daemon-visible version/subversion string is changed, so this node speaks the
