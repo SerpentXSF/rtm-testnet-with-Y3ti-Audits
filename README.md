@@ -14,13 +14,20 @@ Raptoreum node and everything needed to earn testnet rewards by validating secur
 > `README.md` inside the node package -- deliberately not duplicated further down this file,
 > because a second copy is a copy that drifts.
 
-> ⛔ **If you installed r10, replace it.** The r10 *combined* bundles shipped agent
-> `2.0.9` (`CODE_FP fa89775c85e20988`), not the `2.1.25` those release notes claimed. The
-> 2.1.25 was only ever in the separate `y3ti-audits-testnet-node` archive, so that one
-> release offered two different agent versions and which you got depended on which asset
-> you clicked. **The 2.0.9 agent predates the coordinator-URL fix and cannot complete
-> registration**, so a node installed from it never comes online. Check what you actually
-> have -- the artifact cannot be wrong about itself:
+> ⛔ **If you installed r10 — EITHER asset — replace it.** Every r10 download ships
+> `http://auditor.y3ti.uk:11337`: plain `http` on a port that serves only `https`. **A node
+> installed from r10 cannot complete registration and never comes online.** The fix landed
+> in agent `2.1.33`, so r11 is the first release that has it.
+>
+> This applies to the standalone `y3ti-audits-testnet-node-v2.1.25` archive **as well as**
+> the combined bundles — an earlier version of this warning said only the combined bundles
+> were affected, which was wrong.
+>
+> The combined bundles additionally shipped agent `2.0.9` (`CODE_FP fa89775c85e20988`), not
+> the `2.1.25` those release notes claimed — the 2.1.25 was only ever in the separate
+> archive, so one release offered two different agent versions and which you got depended
+> on which asset you clicked. Check what you actually have; the artifact cannot be wrong
+> about itself:
 >
 > ```
 > grep AGENT_VERSION y3ti/agent/app/build_info.py
@@ -193,6 +200,30 @@ configure this — but two things matter:
 - **Secrets:** only `*.example` templates ship in this bundle. Copy them to their live names
   (`.env`, `config/secrets.env`, `config/raptoreum.env`) on your own host and fill them in. **Never
   share or redistribute the filled-in files** — they contain your keys and shared secret.
+
+---
+
+## Licensing
+
+**This repository contains two separate bodies of work under two different licences.**
+
+* **The Y3ti Audits software** — the node agent, the hardened scan sandbox and its scanner
+  adapters, the control panel, the packaging scripts and the documentation (the `y3ti/`
+  directory in the combined bundles, and the whole `y3ti-audits-testnet-node` package) — is
+  **© 2026 SerpentXSF (Y3ti Audits), all rights reserved**. You may download, run and
+  operate it to run a validator node, inspect and reproduce the build to verify what you are
+  running, and modify your own copy locally to operate it. You may **not** redistribute,
+  sublicense, sell, or use it to build a competing service. Full terms: [`LICENSE`](LICENSE).
+
+* **Raptoreum Core** — the `raptoreumd`, `raptoreum-cli` and `raptoreum-tx` binaries and the
+  `upstream/` source — is the official upstream release, redistributed **verbatim and
+  unmodified**, and remains under the **MIT licence** of the Raptoreum, Dash and Bitcoin Core
+  developers. Full text: [`LICENSE-RAPTOREUM`](LICENSE-RAPTOREUM). Nothing in our terms adds
+  to or subtracts from your rights in that software.
+
+Until 2026-11-01 this repository carried only upstream's MIT licence file, which GitHub
+reported as the licence for the whole repository. That was never the intent for the Y3ti
+code and is corrected here.
 
 ---
 

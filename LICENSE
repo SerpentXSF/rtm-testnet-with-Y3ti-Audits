@@ -1,24 +1,74 @@
-The MIT License (MIT)
+Y3ti Audits — Raptoreum SmartNode Package
+=========================================
 
-Copyright (c) 2009-2020 The Bitcoin Core developers
-Copyright (c) 2009-2020 Bitcoin Developers
-Copyright (c) 2014-2020 The Dash Core developers
-Copyright (c) 2020-2022 The Raptoreum developers
+THIS REPOSITORY AND ITS RELEASE ARTIFACTS CONTAIN TWO SEPARATE BODIES OF WORK UNDER
+TWO DIFFERENT LICENCES. Read both before using, copying or distributing anything here.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+1. THE Y3ti AUDITS SOFTWARE  —  proprietary, all rights reserved
+--------------------------------------------------------------------------------
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+Copyright (c) 2026 SerpentXSF (Y3ti Audits). All rights reserved.
+
+Covers everything authored for Y3ti Audits, including but not limited to the node
+agent, the hardened scan sandbox and its scanner adapters, the control panel, the
+packaging and build scripts, and the accompanying documentation. In the release
+archives this is the `y3ti/` directory, and the whole of the
+`y3ti-audits-testnet-node` package.
+
+YOU ARE PERMITTED TO:
+
+  a) download, install, run and operate this software for the purpose of operating a
+     Y3ti Audits validator node on the Raptoreum network, including on hardware you
+     control and for as many of your own nodes as you wish;
+
+  b) read, inspect and audit the source, and reproduce the builds, in order to verify
+     what you are running — this software asks you to trust consensus results, and you
+     are entitled to check it;
+
+  c) modify your own copy locally where that is necessary to operate, debug, package
+     or integrate it on your own systems; and
+
+  d) make backup copies for those purposes.
+
+YOU ARE NOT PERMITTED TO, without prior written permission from the copyright holder:
+
+  e) redistribute, publish, mirror or otherwise make available this software or any
+     part of it, modified or unmodified, to any third party;
+
+  f) sublicense, sell, rent, lease or offer it as part of any paid or unpaid service;
+
+  g) use it, in whole or in part, to build or operate a competing code-audit,
+     code-scanning or consensus-verification service; or
+
+  h) remove, obscure or alter any copyright, licence or attribution notice.
+
+Permission under (a)-(d) is granted for as long as you comply with this licence, and
+ends automatically if you do not.
+
+NO WARRANTY. THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR
+A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE
+OR THE USE OR OTHER DEALINGS IN IT.
+
+THIS IS A TESTNET RELEASE. Rewards are testnet RTM and have no monetary value. Nothing
+here is a representation about mainnet behaviour, availability or rewards.
+
+
+2. RAPTOREUM CORE AND ITS PREDECESSORS  —  MIT
+--------------------------------------------------------------------------------
+
+The Raptoreum Core wallet binaries and source distributed with this package are the
+official upstream release, redistributed verbatim and unmodified. They are the work of
+the Raptoreum, Dash and Bitcoin Core developers and are licensed under the MIT licence,
+whose full text is in `LICENSE-RAPTOREUM` in this repository and is also included in the
+release archives. Nothing in section 1 adds to, removes from or otherwise affects your
+rights in that software, and nothing in this file claims any copyright over it.
+
+In the release archives, upstream's material is the `upstream/` directory and the
+`raptoreumd`, `raptoreum-cli` and `raptoreum-tx` binaries.
+
+
+Questions about licensing, or a use not permitted above, go to the repository owner.
