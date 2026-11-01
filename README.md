@@ -219,8 +219,8 @@ configure this — but two things matter:
   operate it to run a validator node, inspect and reproduce the build to verify what you are
   running, and modify your own copy locally to operate it. You **may** redistribute and
   mirror a **complete, unmodified release archive** -- notices intact, with that release's
-  published `SHA256SUMS.txt` available to whoever you give it to, so they can check that
-  what reached them is what was released. You may **not** redistribute a **modified** copy,
+  published checksum file (`SHA256SUMS.txt`) available to whoever you give it to, so they can
+  check that what reached them is what was released. You may **not** redistribute a **modified** copy,
   sublicense, sell, or use it to build a competing service. Full terms:
   [`LICENSE`](LICENSE).
   **From r12 (agent 2.1.34) onward both licence files also ship inside the release
@@ -244,5 +244,10 @@ The three native binaries are the official `2.0.4.01` release artifacts for this
 `checksums-upstream-2.0.4.01.txt` is the checksums file that shipped inside the corresponding official
 release, retained so the binaries can be cross-checked against upstream. `checksums.txt` in this bundle
 is regenerated over the full contents (binaries + tooling) with correctly labelled sha1 and sha256
-blocks. Verify with `sha256sum -c SHA256SUMS.txt` (archives) or the `sha256:` block of `checksums.txt`
-(extracted files).
+blocks. Verify the downloaded archives with `sha256sum -c SHA256SUMS.txt`, using the checksum
+file published with the release, or check extracted files against the `sha256:` block of the
+`checksums.txt` inside the bundle. Those are two different files in two different formats that
+unfortunately share a name on some releases: the release-level one is plain `sha256sum` lines,
+the in-bundle one has labelled `sha1:` and `sha256:` blocks. Releases before r13 published the
+release-level manifest as `checksums.txt`; if that is what you downloaded, rename it or pass it
+to `sha256sum -c` directly.

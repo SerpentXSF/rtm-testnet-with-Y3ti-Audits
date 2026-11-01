@@ -41,8 +41,10 @@ YOU ARE PERMITTED TO:
   e) redistribute and mirror this software, including handing it to another operator,
      PROVIDED THAT what you pass on is a COMPLETE and UNMODIFIED release archive exactly
      as published, with every copyright, licence and attribution notice intact, and that
-     the published `SHA256SUMS.txt` for that release accompanies it or is otherwise
-     available to the person receiving it.
+     the checksum file published with that release -- `SHA256SUMS.txt` -- accompanies it,
+     or is otherwise available to the person receiving it. If a release publishes its
+     checksums under a different name, that file is the one meant: the condition is that the
+     recipient can verify the archive, not that a particular filename is present.
 
      That condition is the point of the permission, not paperwork attached to it. This
      software asks you to trust consensus results, so whoever receives a copy has to be
