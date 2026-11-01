@@ -217,8 +217,12 @@ configure this — but two things matter:
   directory in the combined bundles, and the whole `y3ti-audits-testnet-node` package) — is
   **© 2026 SerpentXSF (Y3ti Audits), all rights reserved**. You may download, run and
   operate it to run a validator node, inspect and reproduce the build to verify what you are
-  running, and modify your own copy locally to operate it. You may **not** redistribute,
-  sublicense, sell, or use it to build a competing service. Full terms: [`LICENSE`](LICENSE).
+  running, and modify your own copy locally to operate it. You **may** redistribute and
+  mirror a **complete, unmodified release archive** -- notices intact, with that release's
+  published `SHA256SUMS.txt` available to whoever you give it to, so they can check that
+  what reached them is what was released. You may **not** redistribute a **modified** copy,
+  sublicense, sell, or use it to build a competing service. Full terms:
+  [`LICENSE`](LICENSE).
   **From r12 (agent 2.1.34) onward both licence files also ship inside the release
   archives**, which is the copy you actually keep.
 

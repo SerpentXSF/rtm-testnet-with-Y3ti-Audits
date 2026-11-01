@@ -29,22 +29,42 @@ YOU ARE PERMITTED TO:
   c) modify your own copy locally where that is necessary to operate, debug, package
      or integrate it on your own systems; and
 
-  d) make backup copies for those purposes.
+  d) make backup copies for those purposes; and
+
+  e) redistribute and mirror this software, including handing it to another operator,
+     PROVIDED THAT what you pass on is a COMPLETE and UNMODIFIED release archive exactly
+     as published, with every copyright, licence and attribution notice intact, and that
+     the published `SHA256SUMS.txt` for that release accompanies it or is otherwise
+     available to the person receiving it.
+
+     That condition is the point of the permission, not paperwork attached to it. This
+     software asks you to trust consensus results, so whoever receives a copy has to be
+     able to tell whether what reached them is what was actually released. Checksums they
+     can verify make that possible. A modified copy makes it impossible, which is why (f)
+     below reserves it.
 
 YOU ARE NOT PERMITTED TO, without prior written permission from the copyright holder:
 
-  e) redistribute, publish, mirror or otherwise make available this software or any
-     part of it, modified or unmodified, to any third party;
+  f) redistribute, publish or make available a MODIFIED copy of this software, or any
+     part of it in isolation -- the permission in (e) covers complete, unmodified
+     releases and nothing else;
 
-  f) sublicense, sell, rent, lease or offer it as part of any paid or unpaid service;
+  g) sublicense, sell, rent, lease or offer it as part of any paid or unpaid service;
 
-  g) use it, in whole or in part, to build or operate a competing code-audit,
+  h) use it, in whole or in part, to build or operate a competing code-audit,
      code-scanning or consensus-verification service; or
 
-  h) remove, obscure or alter any copyright, licence or attribution notice.
+  i) remove, obscure or alter any copyright, licence or attribution notice.
 
-Permission under (a)-(d) is granted for as long as you comply with this licence, and
+Permission under (a)-(e) is granted for as long as you comply with this licence, and
 ends automatically if you do not.
+
+THIS GRANT SUPERSEDES THE COPIES IN EARLIER ARCHIVES, AND ONLY EVER WIDENS THEM. Release
+archives published before this change -- r11 and r12, agents 2.1.33 and 2.1.34 -- ship an
+earlier version of this file whose clause (e) forbade redistribution outright. The
+copyright holder grants the permission above for those releases too: if you hold an older
+archive, you may rely on this version. Nothing here takes away a permission anyone
+already had.
 
 NO WARRANTY. THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
 OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR
