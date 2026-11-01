@@ -7,11 +7,24 @@ Raptoreum node and everything needed to earn testnet rewards by validating secur
 
 ---
 
-> **Current release:** Raptoreum Core package `2.0.4.01-Y3ti-Serpent-r10` + Y3ti Audits
-> node agent **2.1.25** (`CODE_FP 0987cf4b57c95514`, sandbox `ce02b1e796caebca`).
+> **Current release:** Raptoreum Core package `2.0.4.01-Y3ti-Serpent-r11` + Y3ti Audits
+> node agent **2.1.33** (`CODE_FP 0b13db5e2d1eaca9`, sandbox `dbb4606d60028d87`).
+> Every value above was read out of the release artifacts themselves.
 > The authoritative list of versions and digests is the **Releases** page and the
 > `README.md` inside the node package -- deliberately not duplicated further down this file,
 > because a second copy is a copy that drifts.
+
+> ⛔ **If you installed r10, replace it.** The r10 *combined* bundles shipped agent
+> `2.0.9` (`CODE_FP fa89775c85e20988`), not the `2.1.25` those release notes claimed. The
+> 2.1.25 was only ever in the separate `y3ti-audits-testnet-node` archive, so that one
+> release offered two different agent versions and which you got depended on which asset
+> you clicked. **The 2.0.9 agent predates the coordinator-URL fix and cannot complete
+> registration**, so a node installed from it never comes online. Check what you actually
+> have -- the artifact cannot be wrong about itself:
+>
+> ```
+> grep AGENT_VERSION y3ti/agent/app/build_info.py
+> ```
 
 ## What is Y3ti Audits?
 
@@ -35,7 +48,7 @@ mainnet. Never use real funds.)
 
 ## About the version label
 
-The `2.0.4.01-Y3ti-Serpent-rN` name (the current release is **r10**) labels
+The `2.0.4.01-Y3ti-Serpent-rN` name (the current release is **r11**) labels
 **this distribution package** — it is **not** a Raptoreum
 daemon version. The wallet binaries here are the **stock, unmodified official Raptoreum Core
 `2.0.4.01` testnet release** (verbatim, bit-identical to upstream), which is the **latest upstream
