@@ -7,9 +7,14 @@ Raptoreum node and everything needed to earn testnet rewards by validating secur
 
 ---
 
-> **Current release:** Raptoreum Core package `2.0.4.01-Y3ti-Serpent-r11` + Y3ti Audits
-> node agent **2.1.33** (`CODE_FP 0b13db5e2d1eaca9`, sandbox `dbb4606d60028d87`).
+> **Current release:** Raptoreum Core package `2.0.4.01-Y3ti-Serpent-r12` + Y3ti Audits
+> node agent **2.1.34** (`CODE_FP 8d1931882753a1b6`, sandbox `dbb4606d60028d87`).
 > Every value above was read out of the release artifacts themselves.
+>
+> r12 adds the licence files inside the package and changes nothing else. Coming from r11
+> (2.1.33) nothing is urgent and **no sandbox rebuild is needed** — the sandbox digest is
+> unchanged, so a mixed 2.1.33 / 2.1.34 fleet agrees under RF-3. Coming from r10 or earlier
+> you **must** run `./build-sandbox.sh`; 2.1.34 does not cancel that debt.
 > The authoritative list of versions and digests is the **Releases** page and the
 > `README.md` inside the node package -- deliberately not duplicated further down this file,
 > because a second copy is a copy that drifts.
@@ -55,7 +60,7 @@ mainnet. Never use real funds.)
 
 ## About the version label
 
-The `2.0.4.01-Y3ti-Serpent-rN` name (the current release is **r11**) labels
+The `2.0.4.01-Y3ti-Serpent-rN` name (the current release is **r12**) labels
 **this distribution package** — it is **not** a Raptoreum
 daemon version. The wallet binaries here are the **stock, unmodified official Raptoreum Core
 `2.0.4.01` testnet release** (verbatim, bit-identical to upstream), which is the **latest upstream
@@ -214,6 +219,8 @@ configure this — but two things matter:
   operate it to run a validator node, inspect and reproduce the build to verify what you are
   running, and modify your own copy locally to operate it. You may **not** redistribute,
   sublicense, sell, or use it to build a competing service. Full terms: [`LICENSE`](LICENSE).
+  **From r12 (agent 2.1.34) onward both licence files also ship inside the release
+  archives**, which is the copy you actually keep.
 
 * **Raptoreum Core** — the `raptoreumd`, `raptoreum-cli` and `raptoreum-tx` binaries and the
   `upstream/` source — is the official upstream release, redistributed **verbatim and
