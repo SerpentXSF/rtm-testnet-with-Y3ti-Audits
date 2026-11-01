@@ -4,6 +4,13 @@ Y3ti Audits — Raptoreum SmartNode Package
 THIS REPOSITORY AND ITS RELEASE ARTIFACTS CONTAIN TWO SEPARATE BODIES OF WORK UNDER
 TWO DIFFERENT LICENCES. Read both before using, copying or distributing anything here.
 
+THE CURRENT VERSION OF THIS FILE IS PUBLISHED AT
+https://github.com/SerpentXSF/rtm-testnet-with-Y3ti-Audits
+and the copy in your archive may be older than it. The permissions in section 1 only ever
+WIDEN (see the end of that section), so where the two differ, the published version is the
+one you may rely on. This pointer exists because earlier archives shipped a narrower licence
+with nothing in them to say where the authoritative text lived.
+
 
 1. THE Y3ti AUDITS SOFTWARE  —  proprietary, all rights reserved
 --------------------------------------------------------------------------------
@@ -80,15 +87,33 @@ here is a representation about mainnet behaviour, availability or rewards.
 2. RAPTOREUM CORE AND ITS PREDECESSORS  —  MIT
 --------------------------------------------------------------------------------
 
-The Raptoreum Core wallet binaries and source distributed with this package are the
-official upstream release, redistributed verbatim and unmodified. They are the work of
-the Raptoreum, Dash and Bitcoin Core developers and are licensed under the MIT licence,
-whose full text is in `LICENSE-RAPTOREUM` in this repository and is also included in the
-release archives. Nothing in section 1 adds to, removes from or otherwise affects your
-rights in that software, and nothing in this file claims any copyright over it.
+Raptoreum Core is the work of the Raptoreum, Dash and Bitcoin Core developers and is
+licensed under the MIT licence, whose full text is `LICENSE-RAPTOREUM`, distributed
+alongside this file. Nothing in section 1 adds to, removes from or otherwise affects your
+rights in that software, and nothing in this file claims any copyright over it. Wherever
+upstream material is distributed with Y3ti Audits it is the official upstream release,
+redistributed verbatim and unmodified.
 
-In the release archives, upstream's material is the `upstream/` directory and the
-`raptoreumd`, `raptoreum-cli` and `raptoreum-tx` binaries.
+HOW UPSTREAM REACHES YOU DEPENDS ON WHICH PACKAGE YOU HAVE, so what follows is the rule and
+not one package's layout. An earlier version of this paragraph named a single layout -- the
+`upstream/` directory together with the `raptoreumd`, `raptoreum-cli` and `raptoreum-tx`
+binaries -- and no package has ever had both, so it was wrong about every package it shipped
+in. A package may:
+
+  a) carry upstream's compiled binaries, `raptoreumd`, `raptoreum-cli` and `raptoreum-tx`,
+     together with the files released beside them;
+
+  b) carry upstream's source release as an archive under `upstream/`, with its SHA-256
+     beside it; or
+
+  c) carry no upstream material at all, and instead build a container that downloads one
+     specific upstream release. See `raptoreum/docker/Dockerfile`, which pins both the URL
+     and the SHA-256 of what it fetches.
+
+Case (c) is why `LICENSE-RAPTOREUM` ships even in a package that contains no upstream code.
+The notice has to reach whoever ends up RUNNING the software, and that package is the one
+that installs it.
 
 
-Questions about licensing, or a use not permitted above, go to the repository owner.
+Questions about licensing, or a use not permitted above, go to the copyright holder through
+https://github.com/SerpentXSF/rtm-testnet-with-Y3ti-Audits.
