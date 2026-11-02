@@ -68,11 +68,16 @@ YOU ARE NOT PERMITTED TO, without prior written permission from the copyright ho
 Permission under (a)-(e) is granted for as long as you comply with this licence, and
 ends automatically if you do not.
 
-THIS GRANT SUPERSEDES THE COPIES IN EARLIER ARCHIVES, AND ONLY EVER WIDENS THEM. Release
-archives published before this change -- r11 and r12, agents 2.1.33 and 2.1.34 -- ship an
-earlier version of this file whose clause (e) forbade redistribution outright. The
-copyright holder grants the permission above for those releases too: if you hold an older
-archive, you may rely on this version. Nothing here takes away a permission anyone
+THIS GRANT SUPERSEDES THE COPIES IN EARLIER ARCHIVES, AND ONLY EVER WIDENS THEM. Two
+earlier states, and neither is this one:
+
+  * r12 and later (agent 2.1.34) ship an earlier version of THIS file, whose clause (e)
+    forbade redistribution outright.
+  * r11 (agent 2.1.33) and everything before it ship NO licence file for the Y3ti software at
+    all -- only upstream's MIT text, which does not cover it.
+
+The copyright holder grants the permission above for both, retroactively: if you hold any
+older archive, you may rely on this version. Nothing here takes away a permission anyone
 already had.
 
 NO WARRANTY. THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
