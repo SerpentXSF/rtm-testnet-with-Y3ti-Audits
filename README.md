@@ -12,10 +12,21 @@ Raptoreum node and everything needed to earn testnet rewards by validating secur
 > 2.1.33, so **not a flag day**).
 > Every value above was read out of the release artifacts themselves.
 >
-> r12 adds the licence files inside the package and changes nothing else. Coming from r11
-> (2.1.33) nothing is urgent and **no sandbox rebuild is needed** — the sandbox digest is
-> unchanged, so a mixed 2.1.33 / 2.1.34 fleet agrees under RF-3. Coming from r10 or earlier
-> you **must** run `./build-sandbox.sh`; 2.1.34 does not cancel that debt.
+> r14 adds the two licence files inside the package and moves the agent's version string.
+> Measured against the published 2.1.33 archive: `LICENSE` and `LICENSE-RAPTOREUM` are new,
+> `README.md` and `agent/app/build_info.py` changed, nothing was removed, and the only
+> non-comment line that differs in the agent is `AGENT_VERSION`.
+>
+> **No sandbox rebuild is needed to take it.** `agent/sandbox/` is byte-identical to its
+> 2.1.33 counterpart — all 45 files, same paths, same bytes — so the source digest is
+> still `dbb4606d60028d87`, and a fleet running any mix of 2.1.33 and 2.1.36 agrees under
+> RF-3, which compares scan OUTPUT and not agent versions.
+>
+> ⛑ **Check your own node's `sandbox=`, not a release number.** If it reads
+> `dbb4606d60028d87` you owe nothing. If it reads anything else, that node is scanning with
+> an older toolchain and owes `./build-sandbox.sh` — 30 to 45 minutes, and it stops your
+> agent for the duration and restarts it itself. This is written as a value rather than a
+> version boundary on purpose: the value is what your node reports and cannot go stale.
 > The authoritative list of versions and digests is the **Releases** page and the
 > `README.md` inside the node package -- deliberately not duplicated further down this file,
 > because a second copy is a copy that drifts.
