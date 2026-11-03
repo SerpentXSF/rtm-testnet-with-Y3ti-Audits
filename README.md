@@ -7,8 +7,9 @@ Raptoreum node and everything needed to earn testnet rewards by validating secur
 
 ---
 
-> **Current release:** Raptoreum Core package `2.0.4.01-Y3ti-Serpent-r13` + Y3ti Audits
-> node agent **2.1.34** (`CODE_FP 8d1931882753a1b6`, sandbox `dbb4606d60028d87`).
+> **Current release:** Raptoreum Core package `2.0.4.01-Y3ti-Serpent-r14` + Y3ti Audits
+> node agent **2.1.36** (`CODE_FP 2c1f676906a769cf`, sandbox `dbb4606d60028d87` — unchanged since
+> 2.1.33, so **not a flag day**).
 > Every value above was read out of the release artifacts themselves.
 >
 > r12 adds the licence files inside the package and changes nothing else. Coming from r11
@@ -60,7 +61,7 @@ mainnet. Never use real funds.)
 
 ## About the version label
 
-The `2.0.4.01-Y3ti-Serpent-rN` name (the current release is **r13**) labels
+The `2.0.4.01-Y3ti-Serpent-rN` name (the current release is **r14**) labels
 **this distribution package** — it is **not** a Raptoreum
 daemon version. The wallet binaries here are the **stock, unmodified official Raptoreum Core
 `2.0.4.01` testnet release** (verbatim, bit-identical to upstream), which is the **latest upstream
