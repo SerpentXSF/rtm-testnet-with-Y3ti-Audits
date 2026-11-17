@@ -1,8 +1,8 @@
 Y3ti Audits — Raptoreum SmartNode Package
 =========================================
 
-THIS REPOSITORY AND ITS RELEASE ARTIFACTS CONTAIN TWO SEPARATE BODIES OF WORK UNDER
-TWO DIFFERENT LICENCES. Read both before using, copying or distributing anything here.
+THIS REPOSITORY AND ITS RELEASE ARTIFACTS CONTAIN SEPARATE BODIES OF WORK UNDER
+DIFFERENT LICENCES. Read every section before using, copying or distributing anything here.
 
 THE CURRENT VERSION OF THIS FILE IS PUBLISHED AT
 https://github.com/SerpentXSF/rtm-testnet-with-Y3ti-Audits
@@ -120,6 +120,28 @@ in. A package may:
 Case (c) is why `LICENSE-RAPTOREUM` ships even in a package that contains no upstream code.
 The notice has to reach whoever ends up RUNNING the software, and that package is the one
 that installs it.
+
+
+3. THIRD-PARTY SCANNER TOOLS AND LIBRARIES  —  each under its own licence
+--------------------------------------------------------------------------------
+
+The scan sandbox runs tools written by others -- among them Slither, Mythril, Semgrep, the
+Solidity compiler, Aderyn, Foundry, Bandit, Checkov, gosec, gitleaks, Trivy and Solhint --
+together with the libraries they use. THIS PACKAGE DOES NOT CONTAIN THEM. `./build-sandbox.sh`
+downloads each one from its publisher, at the version pinned in `agent/sandbox/Dockerfile`
+and the committed lockfiles, and builds the sandbox image on YOUR machine.
+
+Section 1 covers Y3ti Audits' own work -- the agent, the sandbox's Dockerfile, its adapters,
+rules and build scripts -- and NOT those tools. Each of them is licensed solely under its own
+terms, listed with its version in `THIRD-PARTY-NOTICES.md`, distributed alongside this file.
+Nothing in section 1 adds to, removes from or otherwise affects your rights in that software,
+and nothing in this file claims any copyright over it.
+
+Several of those tools are licensed under the GPL or the AGPL, and a few of the Solidity
+libraries restrict PRODUCTION use; `THIRD-PARTY-NOTICES.md` lists them first. Those libraries
+are fetched only so that customer code which imports them compiles, and are never deployed. If you
+redistribute an image you built from this package, you are the distributor of the tools
+inside it and their licences apply to you.
 
 
 Questions about licensing, or a use not permitted above, go to the copyright holder through
